@@ -1,0 +1,100 @@
+/*  General Styling - Poore page ka basic styling */
+body {
+    font-family: Arial, sans-serif; /* Font style set kar raha hai */
+    background-color: yellow; /* Page ka background color */
+    color: #333; /* Text color */
+    margin: 0; /* Default margin hata raha hai */
+    padding: 0; /* Default padding hata raha hai */
+    text-align: center; /* Text ko center align kar raha hai */
+    /*background-image: url('background.jpg');
+}
+
+/*  Header Styling */
+header {
+    background-color: #ff5733; /* Header ka background color orange */
+    color: white; /* Text ka color white */
+    padding: 20px; /* Upar-niche aur side padding de raha hai */
+}
+
+/*  Text Styling - Alag-alag text effects */
+.a {
+    font-weight: bold; /* Text ko mota (bold) kar raha hai */
+}
+
+.b {
+    font-style: italic; /* Text ko italic bana raha hai */
+}
+
+.underline-text {
+    text-decoration: underline; /* Text ke neeche ek line aa jayegi */
+}
+
+.shadow-text {
+    font-size: 30px; /* Text ka size bada kar raha hai */
+    color: green; /* Text ka color dark gray */
+    text-shadow: 2px 2px 4px rgba(238, 0, 0, 0.5); /* Text ke peeche shadow effect */
+}
+
+/*  Image Manipulation - Alag-alag tarike se image styling */
+.image-container {
+    display: flex; /* Images ko ek row me lane ke liye */
+    justify-content: center; /* Center me align kar raha hai */
+    gap: 20px; /* Images ke beech ka gap */
+    margin-top: 20px; /* Upar thoda space de raha hai */
+}
+
+img {
+    width: 200px; /* Image ki width fix kar raha hai */
+    height: auto; /* Height ko automatic rakh raha hai */
+    border: 3px solid #ff5733; /* Image ke ird-gird ek orange border */
+    border-radius: 10px; /* Corners thoda gol kar raha hai */
+}
+
+/*  Image Effects */
+.rounded-image {
+    border-radius: 90%; /* Image ko poora gol bana raha hai */
+}
+
+.grayscale-image {
+    filter: grayscale(100%); /* Image ko black & white bana raha hai */
+}
+
+.hover-scale-image:hover {
+    transform: scale(1.1); /* Hover karne pe image thodi badi ho jayegi */
+    transition: 0.1s ease-in-out; /* Smooth animation ke liye */
+}
+
+/*  Box Model Demonstration */
+.box {
+    width: 200px; /* Box ki width */
+    height: 100px; /* Box ki height */
+    background-color: #4CAF50; /* Box ka background green */
+    color: white; /* Text ka color white */
+    line-height: 100px; /* Text ko vertically center kar raha hai */
+    margin: 20px auto; /* Box ko center me rakh raha hai */
+    border-radius: 8rm; /* Box ke kone gol kar raha hai */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Box ke neeche shadow effect */
+}
+
+/*  Flexbox Layout - Responsive layout ke liye */
+.flex-container {
+    display: flex; /* Items ko row me la raha hai */
+    justify-content: space-around; /* Items ke beech equal space */
+    align-items: center; /* Items ko vertically center align kar raha hai */
+    background-color: #ddd; /* Background color gray */
+    padding: 20px; /* Andar space */
+    margin-top: 20px; /* Upar thoda space */
+}
+
+/*  Flexbox Items */
+.flex-item {
+    background-color: #ff5733; /* Background orange */
+    color: white; /* Text white */
+    padding: 20px; /* Andar space */
+    border-radius: 5px; /* Gol kinare */
+    font-size: 18px; /* Font size thoda bada */
+}
+.a {
+    background-color:aqua;
+    padding: 20px;
+}

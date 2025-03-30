@@ -1,0 +1,83 @@
+/* Poore page ke liye basic styling */
+body {
+    font-family: Arial, sans-serif; /* Font style set kar raha hai */
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center; /* Text ko center align kar raha hai */
+    margin: 0; /* Default margin hata raha hai */
+    padding: 0; /* Default padding hata raha hai */
+}
+
+/* Header ka styling */
+header {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 20px; /* Spacing */
+}
+
+/* Container jo saare sections ko hold karega */
+.container {
+    display: flex; /* Flexbox layout use kar raha hai */
+    flex-direction: column; /* Items ko ek column me rakh raha hai */
+    align-items: center; /* Center me align kar raha hai */
+    gap: 20px; /* Items ke beech spacing */
+    margin-top: 20px; /* Upar se gap */
+}
+
+/* Shadow effect ke liye text styling */
+.shadow-text {
+    font-size: 20px; /* Text size bada kar raha hai */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Image section ka styling */
+.rounded-image {
+    width: 250px; /* Image width */
+    height: auto; /* Height auto adjust hogi */
+    border-radius: 50%; /* Image ko gol bana raha hai */
+    border: 4px solid #007bff; /* Blue border */
+}
+
+/* Clamped text jo sirf 3 lines tak dikhai dega */
+.clamped-text {
+    width: 300px; /* Fixed width */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Sirf 3 lines dikhai dengi */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Extra text hide ho jayega */
+}
+
+/* Hover effect ke liye styling */
+.hover-box {
+    width: 200px; /* Box width */
+    height: 100px; /* Box height */
+    background-color: #ff5733; /* Orange color */
+    color: white; /* White text */
+    display: flex; /* Flexbox use kiya */
+    align-items: center; /* Center me text */
+    justify-content: center; /* Center me text */
+    border-radius: 10px; /* Thoda gol edges */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Jab hover hoga to zoom effect */
+.hover-box:hover {
+    transform: scale(1.1); /* 10% zoom hoga */
+}
+
+/* Button animation ke liye */
+.animated-button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* Border remove */
+    padding: 10px 20px; /* Button size */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth effect */
+}
+
+/* Jab button pe click hoga */
+.animated-button:active {
+    transform: scale(0.95); /* Thoda chhota ho jayega */
+    background-color: #218838; /* Dark green */
+}

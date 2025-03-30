@@ -1,0 +1,420 @@
+/* ============================================
+   GOOGLE FONTS IMPORT
+   ============================================ */
+/* This imports the Poppins font family with different weights from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+/* Reset all elements to have no margin, padding, and use border-box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the main font */
+    line-height: 1.6; /* Set line height for better readability */
+    color: #555; /* Default text color (dark gray) */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Remove underlines from all links and inherit colors */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove bullet points from all lists */
+ul {
+    list-style: none;
+}
+
+/* Styling for all section titles */
+.section-title {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-title h2 {
+    font-size: 2.5rem; /* Large font size for headings */
+    color: #444c6c; /* Dark blue color */
+    font-weight: 600; /* Semi-bold weight */
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+/* Fixed navigation header at top of page */
+header {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 20px 50px; /* Padding inside header */
+    background-color: #fff; /* White background */
+    position: fixed; /* Fix header at top of viewport */
+    width: 100%; /* Full width */
+    top: 0; /* Position at top */
+    z-index: 1000; /* Ensure header is above other content */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Logo styling */
+.logo a {
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: 700; /* Bold */
+    color: #dc57ec; /* Purple color */
+}
+
+/* Navigation menu layout */
+nav ul {
+    display: flex; /* Horizontal layout for menu items */
+}
+
+/* Individual navigation items */
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+/* Navigation links */
+nav ul li a {
+    color: #666; /* Gray color */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s; /* Smooth color transition for hover */
+}
+
+/* Navigation link hover effect */
+nav ul li a:hover {
+    color: #dc57ec; /* Change to purple on hover */
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+/* Full-screen hero/banner section */
+.hero {
+    height: 100vh; /* Full viewport height */
+    /* Gradient overlay on background image */
+    background: linear-gradient(rgba(46, 49, 95, 0.8), rgba(46, 49, 95, 0.8)), url('your-hero-image.jpg');
+    background-size: cover; /* Ensure image covers the whole section */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    color: white; /* White text */
+    margin-top: 60px; /* Add margin to account for fixed header */
+}
+
+/* Container for hero content */
+.hero-content {
+    max-width: 800px; /* Limit width */
+}
+
+/* Main hero heading */
+.hero-content h1 {
+    font-size: 4rem; /* Very large font */
+    font-weight: 700; /* Bold */
+    margin-bottom: 20px; /* Space below */
+    line-height: 1.2; /* Reduced line height for heading */
+}
+
+/* Purple accent dots/commas in the heading */
+.pink-dot {
+    color: #dc57ec; /* Purple color */
+}
+
+/* Hero subtitle */
+.hero-content p {
+    font-size: 1.2rem; /* Larger than normal text */
+    margin-bottom: 40px; /* Space below */
+}
+
+/* Button style (used for Download Resume) */
+.btn {
+    display: inline-block; /* For padding to work properly */
+    background-color: #dc57ec; /* Purple background */
+    color: white; /* White text */
+    padding: 12px 30px; /* Padding around text */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-weight: 500; /* Medium weight */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #c741d7; /* Darker purple on hover */
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+/* About section styling */
+.about {
+    padding: 50px 0; /* Padding top and bottom */
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Container for about content */
+.about-content {
+    display: flex; /* Use flexbox for two columns */
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Padding on sides */
+}
+
+/* Left column with text */
+.about-text {
+    flex: 1; /* Take up equal space */
+    padding-right: 50px; /* Space between text and image */
+    color: red
+}
+
+/* First paragraph styling (lead) */
+.about-text .lead {
+    font-size: 1.1rem; /* Slightly larger */
+    font-weight: 500; /* Medium weight */
+    margin-bottom: 20px; /* Space below */
+    color: red; /* Darker than regular text */
+}
+
+/* Right column with image */
+.about-image {
+    flex: 1; /* Take up equal space */
+    position: relative; /* For absolute positioning of children */
+}
+
+/* Profile image styling */
+.about-image img {
+    width: 100%; /* Full width of container */
+    border-radius: 5x; /* Slightly rounded corners */
+}
+
+/* Social icons container */
+.social-icons {
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center icons */
+    padding: 20px 0; /* Padding top and bottom */
+    background-color: #2d3e75; /* Dark blue background */
+}
+
+/* Individual social icon links */
+.social-icons a {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    border-radius: 50%; /* Circular shape */
+    border: 1px solid #fff; /* White border */
+    display: flex; /* Flexbox for centering icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 10px; /* Space between icons */
+    color: white; /* White icon color */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Social icon hover effect */
+.social-icons a:hover {
+    background-color: #dc57ec; /* Purple background on hover */
+    border-color: #dc57ec; /* Purple border on hover */
+}
+
+/* ============================================
+   EDUCATION SECTION
+   ============================================ */
+/* Education section styling */
+.education {
+    padding: 50px 0; /* Padding top and bottom */
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Container for education items */
+.education-content {
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Padding on sides */
+}
+
+/* Individual education entry */
+.education-item {
+    display: flex; /* Two column layout */
+    margin-bottom: 50px; /* Space between items */
+}
+
+/* Left column with timeline info */
+.timeline {
+    width: 25%; /* Takes 25% of width */
+    position: relative; /* For absolute positioning of child elements */
+}
+
+/* Year text */
+.timeline p {
+    color: #777; /* Medium gray */
+}
+
+/* Degree title */
+.timeline h3 {
+    font-size: 1.3rem; /* Larger text */
+    color: #444; /* Dark gray */
+    margin: 10px 0; /* Space around */
+}
+
+/* Purple dot on timeline */
+.dot {
+    width: 15px; /* Size */
+    height: 15px; /* Size */
+    background-color: #dc57ec; /* Purple color */
+    border-radius: 50%; /* Circular shape */
+    position: absolute; /* Position precisely */
+    left: calc(100% - 7.5px); /* Position at end of timeline column */
+    top: 30px; /* Position vertically */
+}
+
+/* Vertical line for timeline */
+.timeline::after {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Position precisely */
+    top: 30px; /* Start at dot */
+    left: calc(100% - 1px); /* Position at end of timeline column */
+    width: 1px; /* Width of line */
+    height: calc(100% + 50px); /* Extend to next timeline item */
+    background-color: #ddd; /* Light gray line */
+}
+
+/* Hide the line on the last education item */
+.education-item:last-child .timeline::after {
+    display: none;
+}
+
+/* Right column with education details */
+.details {
+    width: 75%; /* Takes 75% of width */
+    padding-left: 50px; /* Space from timeline */
+}
+
+/* University name */
+.details h4 {
+    font-size: 1.1rem; /* Slightly larger */
+    color: #444; /* Dark gray */
+}
+
+/* Location text */
+.details .location {
+    color: #777; /* Medium gray */
+    margin-bottom: 15px; /* Space below */
+}
+
+/* ============================================
+   SCROLL TO TOP BUTTON
+   ============================================ */
+/* Fixed button to scroll back to top */
+.scroll-top {
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Position from bottom */
+    right: 30px; /* Position from right */
+    width: 50px; /* Width */
+    height: 50px; /* Height */
+    background-color: #dc57ec; /* Purple background */
+    color: white; /* White icon */
+    border-radius: 50%; /* Circular shape */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 1.2rem; /* Icon size */
+    opacity: 0; /* Initially invisible */
+    visibility: hidden; /* Initially hidden */
+    transition: all 0.3s; /* Smooth transition */
+}
+
+/* Show the button when 'show' class is added via JavaScript */
+.scroll-top.show {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Make visible */
+}
+
+/* Button hover effect */
+.scroll-top:hover {
+    background-color: #c741d7; /* Darker purple on hover */
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+/* Styles for screens up to 992px (tablets) */
+@media (max-width: 992px) {
+    /* Stack about content columns */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    /* Remove padding from about text */
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 30px; /* Add bottom margin */
+    }
+    
+    /* Stack education item columns */
+    .education-item {
+        flex-direction: column;
+    }
+    
+    /* Make timeline and details full width */
+    .timeline, .details {
+        width: 100%;
+    }
+    
+    /* Add space below timeline */
+    .timeline {
+        margin-bottom: 20px;
+    }
+    
+    /* Hide timeline visual elements */
+    .timeline::after, .dot {
+        display: none;
+    }
+    
+    /* Remove left padding from details */
+    .details {
+        padding-left: 0;
+    }
+}
+
+/* Styles for screens up to 768px (mobile) */
+@media (max-width: 768px) {
+    /* Stack header elements */
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    /* Add space below logo */
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    /* Allow nav items to wrap */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Adjust nav item spacing */
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    /* Reduce hero heading size */
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Styles for screens up to 576px (small mobile) */
+@media (max-width: 576px) {
+    /* Further reduce hero heading size */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
